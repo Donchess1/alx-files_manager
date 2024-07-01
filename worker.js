@@ -13,7 +13,7 @@ const userQueue = new Queue('email sending');
 
 /**
  * Generates the thumbnail of an image with a given width size.
- * @param {String} filePath. The location of the original file.
+ * @param {String} filePath The location of the original file.
  * @param {number} size The width of the thumbnail.
  * @returns {Promise<void>}
  */
@@ -62,14 +62,14 @@ userQueue.process(async (job, done) => {
   }
   console.log(`Welcome ${user.email}!`);
   try {
-    const mailSubject = 'Welcome to ALX-Files_Manager by Rita';
+    const mailSubject = 'Welcome to ALX-Files_Manager by B3zaleel';
     const mailContent = [
       '<div>',
       '<h3>Hello {{user.name}},</h3>',
-      'Welcome to <a href="https://github.com/Donchess1/alx-files_manager">',
+      'Welcome to <a href="https://github.com/B3zaleel/alx-files_manager">',
       'ALX-Files_Manager</a>, ',
       'a simple file management API built with Node.js by ',
-      '<a href="https://github.com/Donchess1">Ritapossible</a>. ',
+      '<a href="https://github.com/B3zaleel">Bezaleel Olakunori</a>. ',
       'We hope it meets your needs.',
       '</div>',
     ].join('');

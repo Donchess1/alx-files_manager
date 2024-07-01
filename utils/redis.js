@@ -2,11 +2,11 @@ import { promisify } from 'util';
 import { createClient } from 'redis';
 
 /**
- * This represents a Redis client.
+ * Represents a Redis client.
  */
 class RedisClient {
   /**
-   * This creates a new RedisClient instance.
+   * Creates a new RedisClient instance.
    */
   constructor() {
     this.client = createClient();
@@ -21,7 +21,7 @@ class RedisClient {
   }
 
   /**
-   * This checks if this client's connection to the Redis server is active.
+   * Checks if this client's connection to the Redis server is active.
    * @returns {boolean}
    */
   isAlive() {
@@ -51,7 +51,7 @@ class RedisClient {
 
   /**
    * Removes the value of a given key.
-   * @param {String} key. The key of the item to remove.
+   * @param {String} key The key of the item to remove.
    * @returns {Promise<void>}
    */
   async del(key) {
